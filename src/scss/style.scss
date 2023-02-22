@@ -11,7 +11,9 @@ $mp: 860px;
 // 공통 scss
 @import "layout";
 @import "header";
+@import "mobilemenu";
 @import "footer";
+@import "gotop";
 // 섹션 scss
 @import "life";
 @import "portfolio";
