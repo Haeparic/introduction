@@ -9,9 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Header from "./components/Header";
 import Visual from "./pages/Visual";
 import Profile from "./pages/Profile";
-import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
-import Vision from "./pages/Vision";
 import Life from "./pages/Life";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
@@ -47,7 +45,7 @@ const App = () => {
     // console.log("현재 이동 페이지 : ", page);
     new Anime(window, {
       prop: "scroll",
-      value: pos.current[page] - 80,
+      value: pos.current[page],
       duration: 500,
     });
   }, [page]);
@@ -71,15 +69,15 @@ const App = () => {
     <div className="wrap" ref={main}>
       <GoTop />
       {/* 7. page 변경 props 전달 */}
-      <Header setPage={setPage} open={open} setOpen={setOpen} />
-      <MobileMenu setPage={setPage} open={open} setOpen={setOpen} />
       <div className="container">
-        <Visual />
-        <Profile />
-        <Skills />
-        <Portfolio />
-        <Life />
-        <Vision />
+        <Header setPage={setPage} open={open} setOpen={setOpen} />
+        <MobileMenu setPage={setPage} open={open} setOpen={setOpen} />
+        <div className="main-contents">
+          <Visual />
+          <Profile />
+          <Portfolio />
+          <Life />
+        </div>
       </div>
       <Footer />
     </div>

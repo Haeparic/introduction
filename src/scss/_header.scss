@@ -1,17 +1,20 @@
 .header {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #fff;
+  width: 15%;
+  height: 70vh;
+  background-color: transparent;
   z-index: 9999;
-  border-bottom: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
   .inner {
+    margin: 30px auto;
     height: 100%;
     .nav {
       height: 100%;
       display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       .header-logo {
@@ -25,11 +28,13 @@
       .gnb {
         height: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        gap: 35px;
+        justify-content: center;
         li {
+          text-align: center;
           cursor: pointer;
-          padding: 0 25px;
           span {
             position: relative;
             font-family: "Poppins", sans-serif;
@@ -50,11 +55,23 @@
             }
           }
           &:hover span {
-            color: #624637;
+            color: #8c0000;
             &::after {
               width: 100%;
             }
           }
+        }
+      }
+      .contact {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        // justify-content: space-between;
+        li {
+          font-size: 18px;
+          cursor: pointer;
         }
       }
       .mobile-bt {
@@ -81,10 +98,27 @@
 }
 // 모바일
 @media screen and (max-width: $mp) {
-  .gnb {
-    display: none !important;
-  }
-  .mobile-bt {
-    display: block !important;
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    .inner {
+      margin: 0;
+      .nav {
+        // display: block !important;
+        flex-direction: row;
+        .gnb {
+          display: none !important;
+        }
+        .contact {
+          margin-right: 50px;
+          flex-direction: row;
+          gap: 10px;
+        }
+        .mobile-bt {
+          display: block !important;
+        }
+      }
+    }
   }
 }

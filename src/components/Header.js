@@ -1,5 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faIdCardClip,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const Header = ({ setPage, open, setOpen }) => {
   return (
@@ -7,7 +12,7 @@ const Header = ({ setPage, open, setOpen }) => {
       <div className="inner">
         <nav className="nav">
           <span className="header-logo" onClick={() => setPage(0)}>
-            Haeparic Profile
+            Haeparic
           </span>
           <ul className="gnb">
             <li onClick={() => setPage(0)}>
@@ -17,16 +22,21 @@ const Header = ({ setPage, open, setOpen }) => {
               <span>Profile</span>
             </li>
             <li onClick={() => setPage(2)}>
-              <span>Skill</span>
-            </li>
-            <li onClick={() => setPage(3)}>
               <span>Portfolio</span>
             </li>
-            <li onClick={() => setPage(4)}>
-              <span>Life</span>
+            <li onClick={() => setPage(3)}>
+              <span>More</span>
             </li>
-            <li onClick={() => setPage(5)}>
-              <span>Vision</span>
+          </ul>
+          <ul className="contact">
+            <li>
+              <FontAwesomeIcon icon={faGithub} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faGoogle} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faIdCardClip} />
             </li>
           </ul>
           <span

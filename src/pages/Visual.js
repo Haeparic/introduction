@@ -16,41 +16,17 @@ const Visual = () => {
     <section className="visual scroll">
       <div className="inner">
         {/* 첫인상 남기기(사진/대표단어) */}
-        <img src={`${path}/images/ditto.png`} alt="visual" />
-        {/* Anime 샘플 */}
-        <div
-          ref={box}
-          className="box"
-          style={style}
-          onClick={(e) => {
-            // 애니메이션 대상, 옵션
-            // new Anime(e.target, {
-            //   prop: "left",
-            //   value: 400,
-            //   duration: 500,
-            // });
-            // new Anime(window, {
-            //   prop: "scroll",
-            //   value: 2000,
-            //   duration: 1500,
-            // });
-            new Anime(box.current, {
-              prop: "left",
-              value: 400,
-              duration: 500,
-              callback: () => {
-                new Anime(box.current, {
-                  prop: "top",
-                  value: 400,
-                  duration: 500,
-                  callback: () => {
-                    alert("완료");
-                  },
-                });
-              },
-            });
-          }}
-        ></div>
+        {/* <img src={`${path}/images/ditto.png`} alt="visual" /> */}
+        <div className="title">
+          <p className="title-main">
+            Cheol<span>H</span>o<span>!</span>
+          </p>
+          <span className="title-sub">
+            <b>프론트엔드</b> 개발자
+            <br />
+            <b>김철호</b>입니다.
+          </span>
+        </div>
       </div>
     </section>
   );

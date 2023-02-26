@@ -1,15 +1,16 @@
 .portfolio {
   .inner {
     .contents {
-      .portfolio-box {
+      .portfolio-team-box {
+        display: flex;
+        flex-wrap: wrap;
         .portfolio-team {
           display: flex;
           flex-wrap: wrap;
+          width: calc(50% - 10px);
           justify-content: space-between;
           margin-bottom: 20px;
-
-          .portfolio-left {
-            width: calc(60% - 10px);
+          .portfolio-img {
             text-align: center;
             a {
               display: block;
@@ -18,10 +19,12 @@
               }
             }
           }
-          .portfolio-right {
-            width: calc(40% - 10px);
+          .portfolio-txt {
+            width: calc(45% - 10px);
           }
         }
+      }
+      .portfolio-box {
         .portfolio-slide {
           a {
             display: block;
@@ -49,8 +52,7 @@
 }
 // 모바일
 @media screen and (max-width: $mp) {
-  .portfolio-left,
-  .portfolio-right {
+  .portfolio-team {
     width: 100% !important;
   }
 }
