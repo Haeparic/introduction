@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import { Tooltip } from "@mui/material";
 
 const Portfolio = () => {
   const path = process.env.PUBLIC_URL;
@@ -19,117 +20,156 @@ const Portfolio = () => {
           <div className="portfolio-team-box">
             {/* <h3>Team Project</h3> */}
             <div className="portfolio-team">
-              <div className="portfolio-img">
-                <a
-                  href="https://haeparic.github.io/Hansalim/"
-                  target="_blank"
-                  alt="portfolio"
-                  rel="noopener noreferrer"
-                >
-                  <img src={`${path}/images/sample.png`} alt="project" />
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
-              </div>
+              <Tooltip title="이미지 클릭시 프로젝트 페이지로 이동합니다.">
+                <div className="portfolio-img">
+                  <a
+                    href="https://github.com/Haeparic/monthlycoffee"
+                    target="_blank"
+                    alt="monthly_coffee"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={`${path}/images/monthly.webp`} alt="project" />
+                  </a>
+                </div>
+              </Tooltip>
               <div className="portfolio-txt">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트명 : </li>
-                  <li>프로젝트 기간 : </li>
-                  <li>프로젝트 주제 : </li>
-                  <li>프로젝트 기여도 : </li>
-                  <li>프로젝트 도구 : </li>
-                  <li>프로젝트 사용언어 : </li>
-                  <li>프로젝트 피그마 : </li>
+                <h3 className="pf-title">MONTHLY COFFEE</h3>
+                <span className="pf-date">2022.11 ~</span>
+                <br />
+                <span className="pf-skill">React Redux Tailwind CSS</span>
+                <br />
+                <span className="pf-memo">
+                  커피를 자주 애용하는 사람들, 커피만 기록하고 싶은 사람들을
+                  위한 커피 전용 가계부 프로젝트입니다.
+                </span>
+                <br />
+                <ul className="pf-detail">
                   <li>
-                    프로젝트 Git :{" "}
-                    <a
-                      href="https://github.com/Haeparic/Hansalim/"
-                      target="_blank"
-                      alt="portfolio"
-                      rel="noopener noreferrer"
-                    >
-                      작업물보기
-                    </a>{" "}
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
                   </li>
-                  <li>프로젝트 Notion : </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
                 </ul>
+                <span>
+                  프로젝트 Git :
+                  <a
+                    href="https://github.com/Haeparic/Hansalim/"
+                    target="_blank"
+                    alt="portfolio"
+                    rel="noopener noreferrer"
+                  >
+                    작업물보기
+                  </a>
+                </span>
               </div>
             </div>
             <div className="portfolio-team">
-              <div className="portfolio-img">
-                <a
-                  href="#"
-                  target="_blank"
-                  alt="portfolio"
-                  rel="noopener noreferrer"
-                >
-                  <img src={`${path}/images/sample.png`} alt="project" />
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
-              </div>
               <div className="portfolio-txt">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트명 : </li>
-                  <li>프로젝트 기간 : </li>
-                  <li>프로젝트 주제 : </li>
-                  <li>프로젝트 기여도 : </li>
-                  <li>프로젝트 도구 : </li>
-                  <li>프로젝트 사용언어 : </li>
-                  <li>프로젝트 피그마 : </li>
-                  <li>프로젝트 Git : </li>
-                  <li>프로젝트 Notion : </li>
+                <h3 className="pf-title">수타벅스</h3>
+                <span className="pf-date">2022.11 ~</span>
+                <br />
+                <span className="pf-skill">React Redux Tailwind CSS</span>
+                <br />
+                <span className="pf-memo">
+                  멤버십 카드를 이용해서 음료 및 음식을 주문할 수 있는 사이트
+                  입니다. ("Starbucks"사이트를 참고 )
+                </span>
+                <br />
+                <ul className="pf-detail">
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
                 </ul>
+                <span>
+                  프로젝트 Git :
+                  <a
+                    href="https://github.com/Haeparic/Hansalim/"
+                    target="_blank"
+                    alt="portfolio"
+                    rel="noopener noreferrer"
+                  >
+                    작업물보기
+                  </a>
+                </span>
               </div>
+              <Tooltip title="이미지 클릭시 프로젝트 페이지로 이동합니다.">
+                <div className="portfolio-img">
+                  <a
+                    href="https://github.com/Haeparic/sutabucks"
+                    target="_blank"
+                    alt="bookstore"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={`${path}/images/sutabucks.webp`} alt="project" />
+                  </a>
+                </div>
+              </Tooltip>
             </div>
             <div className="portfolio-team">
-              <div className="portfolio-img">
-                <a
-                  href="#"
-                  target="_blank"
-                  alt="portfolio"
-                  rel="noopener noreferrer"
-                >
-                  <img src={`${path}/images/sample.png`} alt="project" />
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트명 : </li>
-                  <li>프로젝트 기간 : </li>
-                  <li>프로젝트 주제 : </li>
-                  <li>프로젝트 기여도 : </li>
-                  <li>프로젝트 도구 : </li>
-                  <li>프로젝트 사용언어 : </li>
-                  <li>프로젝트 피그마 : </li>
-                  <li>프로젝트 Git : </li>
-                  <li>프로젝트 Notion : </li>
+              <Tooltip title="이미지 클릭시 프로젝트 페이지로 이동합니다.">
+                <div className="portfolio-img">
+                  <a
+                    href="https://github.com/Haeparic/bookstore"
+                    target="_blank"
+                    alt="bookstore"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={`${path}/images/bookstore.webp`} alt="project" />
+                  </a>
+                </div>
+              </Tooltip>
+              <div className="portfolio-txt">
+                <h3 className="pf-title">교보문고 미니 프로젝트</h3>
+                <span className="pf-date">2022.11 ~</span>
+                <br />
+                <span className="pf-skill">React Redux Tailwind CSS</span>
+                <br />
+                <span className="pf-memo">
+                  전체적인 디자인 분위기는 신문 느낌을 내봤습니다. 영화에 대한
+                  포스팅을 한 뒤 회원, 비회원들과 함께 공유하는 서비스입니다.
+                </span>
+                <br />
+                <ul className="pf-detail">
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
+                  <li>
+                    - 회원가입 후, 로그인을 한 뒤 영화 정보와 함께 감상문을
+                    포스팅합니다.
+                  </li>
                 </ul>
-              </div>
-            </div>
-            <div className="portfolio-team">
-              <div className="portfolio-img">
-                <a
-                  href="#"
-                  target="_blank"
-                  alt="portfolio"
-                  rel="noopener noreferrer"
-                >
-                  <img src={`${path}/images/sample.png`} alt="project" />
-                </a>
-                (이미지 클릭시 프로젝트 페이지로 이동합니다.)
-              </div>
-              <div className="portfolio-right">
-                <ul className="portfolio-team-list">
-                  <li>프로젝트명 : </li>
-                  <li>프로젝트 기간 : </li>
-                  <li>프로젝트 주제 : </li>
-                  <li>프로젝트 기여도 : </li>
-                  <li>프로젝트 도구 : </li>
-                  <li>프로젝트 사용언어 : </li>
-                  <li>프로젝트 피그마 : </li>
-                  <li>프로젝트 Git : </li>
-                  <li>프로젝트 Notion : </li>
-                </ul>
+                <span>
+                  프로젝트 Git :
+                  <a
+                    href="https://github.com/Haeparic/bookstore"
+                    target="_blank"
+                    alt="portfolio"
+                    rel="noopener noreferrer"
+                  >
+                    작업물보기
+                  </a>
+                </span>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@
 }
 
 // 반응형
-$desktop: 1180px;
+$desktop: 1230px;
 $tablet: 960px;
 $mp: 860px;
 // 기본 scss
@@ -23,7 +23,7 @@ $mp: 860px;
 @import "footer";
 @import "gotop";
 // 섹션 scss
-@import "life";
-@import "portfolio";
-@import "profile";
 @import "visual";
+@import "profile";
+@import "portfolio";
+@import "more";

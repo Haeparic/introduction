@@ -10,7 +10,7 @@ import Header from "./components/Header";
 import Visual from "./pages/Visual";
 import Profile from "./pages/Profile";
 import Portfolio from "./pages/Portfolio";
-import Life from "./pages/Life";
+import More from "./pages/More";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
 import MobileMenu from "./components/MobileMenu";
@@ -76,7 +76,7 @@ const App = () => {
           <Visual />
           <Profile />
           <Portfolio />
-          <Life />
+          <More />
         </div>
       </div>
       <Footer />

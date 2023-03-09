@@ -1,30 +1,25 @@
 .profile {
   .inner {
-    display: flex;
-    .about-left {
+    .about {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 70%;
-      img {
-        width: 70%;
-        border-radius: 50%;
-      }
-    }
-    .about-right {
-      width: 100%;
-      .contents {
-        width: 100%;
+      .about-left {
         display: flex;
-        justify-content: space-between;
-        .profile-box {
-          width: calc(50% - 10px);
-          text-align: center;
-          img {
-            width: 95%;
-          }
+        justify-content: center;
+        align-items: center;
+        width: calc(50% - 10px);
+        img {
+          width: 70%;
+          border-radius: 50%;
         }
       }
+      .about-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(50% - 10px);
+      }
+    }
+    .skills {
     }
   }
 }

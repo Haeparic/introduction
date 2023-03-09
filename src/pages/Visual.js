@@ -1,17 +1,9 @@
-import React, { useRef } from "react";
-import Anime from "../assets/Anime";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 const Visual = () => {
   const path = process.env.PUBLIC_URL;
-  const style = {
-    width: 100,
-    height: 100,
-    background: "green",
-    position: "absolute",
-    left: 100,
-    top: 100,
-  };
-  const box = useRef(null);
   return (
     <section className="visual scroll">
       <div className="inner">
@@ -21,11 +13,16 @@ const Visual = () => {
           <p className="title-main">
             Cheol<span>H</span>o<span>!</span>
           </p>
-          <span className="title-sub">
+          <p className="title-sub">
             <b>프론트엔드</b> 개발자
             <br />
             <b>김철호</b>입니다.
-          </span>
+          </p>
+        </div>
+        <div className="title-scroll">
+          scroll
+          <br />
+          <FontAwesomeIcon icon={faChevronDown} />
         </div>
       </div>
     </section>

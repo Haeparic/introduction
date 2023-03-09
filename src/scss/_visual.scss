@@ -22,5 +22,12 @@
         font-size: 20px;
       }
     }
+    .title-scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translate(-50%, 0);
+      text-align: center;
+    }
   }
 }

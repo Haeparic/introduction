@@ -6,21 +6,40 @@
         flex-wrap: wrap;
         .portfolio-team {
           display: flex;
-          flex-wrap: wrap;
-          width: calc(50% - 10px);
-          justify-content: space-between;
-          margin-bottom: 20px;
+          // flex-wrap: wrap;
+          // width: calc(50% - 10px);
+          width: 100%;
+          justify-content: space-around;
+          margin-bottom: 55px;
           .portfolio-img {
+            display: block;
             text-align: center;
+            width: calc(45% - 10px);
             a {
               display: block;
               img {
-                width: 90%;
+                width: 100%;
               }
             }
           }
           .portfolio-txt {
             width: calc(45% - 10px);
+            .pf-title {
+              font-size: 25px;
+            }
+            .pf-date {
+              font-size: 14px;
+              color: #666;
+            }
+            .pf-skill {
+              color: #8c0000;
+              font-weight: 600;
+            }
+            .pf-memo {
+              font-weight: 600;
+            }
+            .pf-detail {
+            }
           }
         }
       }
@@ -53,6 +72,6 @@
 // 모바일
 @media screen and (max-width: $mp) {
   .portfolio-team {
-    width: 100% !important;
+    // width: 100% !important;
   }
 }

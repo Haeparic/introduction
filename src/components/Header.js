@@ -28,17 +28,32 @@ const Header = ({ setPage, open, setOpen }) => {
               <span>More</span>
             </li>
           </ul>
-          <ul className="contact">
-            <li>
+          <div className="contact">
+            <a
+              href="https://github.com/Haeparic"
+              target="_blank"
+              alt="github"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
-            </li>
-            <li>
+            </a>
+            <a
+              href="mailto:v567v202@gmail.com"
+              target="_blank"
+              alt="email"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGoogle} />
-            </li>
-            <li>
+            </a>
+            <a
+              href="https://gregarious-taxi-457.notion.site/6af78c7cb33448e58a98bd33cc6463dc"
+              target="_blank"
+              alt="portfolio_notion"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faIdCardClip} />
-            </li>
-          </ul>
+            </a>
+          </div>
           <span
             className="mobile-bt"
             onClick={() => {
