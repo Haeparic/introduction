@@ -1,25 +1,85 @@
 .profile {
+  margin-bottom: 50px;
   .inner {
     .about {
       display: flex;
+      justify-content: space-around;
+      // .about-left {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   width: calc(50% - 10px);
+      //   img {
+      //     width: 70%;
+      //     // border-radius: 50%;
+      //     border-radius: 47% 53% 35% 65% / 73% 36% 64% 27%;
+      //   }
+      // }
       .about-left {
+        width: calc(30% - 10px);
+        border-radius: 2rem;
+        background: linear-gradient(45deg, transparent, #4c4637, transparent);
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(50% - 10px);
+        place-items: center;
         img {
-          width: 70%;
-          border-radius: 50%;
+          // width: 70%;
+          // aspect-ratio: 1/1;
+          border: 2px solid #4c4637;
+          border-radius: 2rem;
+          overflow: hidden;
+          transform: rotate(10deg);
+          transition: 500ms;
+          &:hover {
+            transform: rotate(0);
+          }
         }
       }
       .about-right {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(50% - 10px);
+        width: calc(60% - 10px);
+        .about-title {
+          h3 {
+            font-size: 25px;
+            span {
+              color: #8c0000;
+            }
+          }
+        }
       }
     }
     .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+      .accordion {
+        width: 80%;
+        background: transparent;
+        // border: 1px solid rgba(0, 0, 0, 0.03);
+        box-shadow: none;
+        &:not(:last-child) {
+          border-bottom: 0;
+        }
+        &:before {
+          display: none;
+        }
+        .accordion-title {
+          border-bottom: 2px solid #001446;
+          font-weight: 600;
+          .skills-title {
+            width: 33%;
+            flex-shrink: 0;
+            font-size: 20px;
+          }
+          .skills-list {
+            // color: #009177;
+          }
+        }
+        .accordion-detail {
+        }
+      }
     }
   }
 }

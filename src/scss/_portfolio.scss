@@ -1,16 +1,19 @@
 .portfolio {
+  margin: 50px 0;
   .inner {
     .contents {
       .portfolio-team-box {
         display: flex;
         flex-wrap: wrap;
+        gap: 30px;
         .portfolio-team {
           display: flex;
-          // flex-wrap: wrap;
+          align-items: center;
+          flex-wrap: wrap;
           // width: calc(50% - 10px);
           width: 100%;
           justify-content: space-around;
-          margin-bottom: 55px;
+          margin-bottom: 75px;
           .portfolio-img {
             display: block;
             text-align: center;
@@ -24,18 +27,34 @@
           }
           .portfolio-txt {
             width: calc(45% - 10px);
-            .pf-title {
-              font-size: 25px;
-            }
-            .pf-date {
-              font-size: 14px;
-              color: #666;
-            }
-            .pf-skill {
-              color: #8c0000;
-              font-weight: 600;
+            .pf-txt {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .pf-title {
+                font-size: 25px;
+                color: #4c4637;
+              }
+              .pf-date {
+                font-size: 14px;
+                color: #666;
+              }
+              .pf-skill {
+                color: #be5846;
+                font-weight: 600;
+              }
+              .pf-notion {
+                font-weight: 600;
+                a {
+                  img {
+                    width: 2rem;
+                  }
+                }
+              }
             }
             .pf-memo {
+              margin: 10px 0;
               font-weight: 600;
             }
             .pf-detail {
@@ -72,6 +91,12 @@
 // 모바일
 @media screen and (max-width: $mp) {
   .portfolio-team {
-    // width: 100% !important;
+    gap: 20px;
+    .portfolio-img {
+      width: 100% !important;
+    }
+    .portfolio-txt {
+      width: 100% !important;
+    }
   }
 }

@@ -13,8 +13,9 @@
       text-align: center;
       .title-main {
         font-size: 100px;
-        font-weight: 600;
-        > span {
+        // font-weight: 600;
+        text-shadow: 4px 4px 0px #bdbdbd;
+        .title-point {
           color: #8c0000;
         }
       }

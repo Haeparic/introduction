@@ -14,6 +14,7 @@ import More from "./pages/More";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
 import MobileMenu from "./components/MobileMenu";
+import MobileNav from "./components/MobileNav";
 
 const App = () => {
   // Anime 적용대상
@@ -71,7 +72,8 @@ const App = () => {
       {/* 7. page 변경 props 전달 */}
       <div className="container">
         <Header setPage={setPage} open={open} setOpen={setOpen} />
-        <MobileMenu setPage={setPage} open={open} setOpen={setOpen} />
+        <MobileNav setPage={setPage} open={open} setOpen={setOpen} />
+        {/* <MobileMenu setPage={setPage} open={open} setOpen={setOpen} /> */}
         <div className="main-contents">
           <Visual />
           <Profile />

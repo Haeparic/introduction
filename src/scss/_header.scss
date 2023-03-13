@@ -18,12 +18,14 @@
       justify-content: space-between;
       align-items: center;
       .header-logo {
-        font-family: "Poppins", sans-serif;
-        font-size: 22px;
-        color: #131313;
-        font-weight: 600;
+        // font-family: "Poppins", sans-serif;
+        // font-size: 22px;
+        // color: #131313;
+        // font-weight: 600;
+        // white-space: nowrap;
+        max-width: 100px;
+        max-height: 100px;
         cursor: pointer;
-        white-space: nowrap;
       }
       .gnb {
         height: 100%;
@@ -108,6 +110,10 @@
       .nav {
         // display: block !important;
         flex-direction: row;
+        .header-logo {
+          width: 64px;
+          height: 64px;
+        }
         .gnb {
           display: none !important;
         }
