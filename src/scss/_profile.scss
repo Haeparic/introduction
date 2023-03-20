@@ -4,17 +4,6 @@
     .about {
       display: flex;
       justify-content: space-around;
-      // .about-left {
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   width: calc(50% - 10px);
-      //   img {
-      //     width: 70%;
-      //     // border-radius: 50%;
-      //     border-radius: 47% 53% 35% 65% / 73% 36% 64% 27%;
-      //   }
-      // }
       .about-left {
         width: calc(30% - 10px);
         border-radius: 2rem;
@@ -24,7 +13,7 @@
         img {
           // width: 70%;
           // aspect-ratio: 1/1;
-          border: 2px solid #4c4637;
+          border: 3px solid #4c4637;
           border-radius: 2rem;
           overflow: hidden;
           transform: rotate(10deg);
@@ -37,14 +26,32 @@
       .about-right {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: calc(60% - 10px);
-        .about-title {
-          h3 {
+        // align-items: center;
+        width: calc(55% - 10px);
+        // margin-right: 25px;
+        .about-text {
+          .color {
+            color: #e86b51;
+          }
+          .about-title {
+            margin-bottom: 5px;
+            color: #494645;
+            text-shadow: 1px 1px 0px #bdbdbd;
             font-size: 25px;
-            span {
-              color: #8c0000;
+            font-weight: 600;
+            .about-top {
+              display: flex;
+              align-items: flex-end;
+              gap: 20px;
             }
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .about-detail {
+            font-size: 19px;
+            text-align: justify;
           }
         }
       }
@@ -66,18 +73,27 @@
           display: none;
         }
         .accordion-title {
-          border-bottom: 2px solid #001446;
+          border-bottom: 2px solid #2f4858;
+          font-size: 17px;
           font-weight: 600;
           .skills-title {
             width: 33%;
             flex-shrink: 0;
-            font-size: 20px;
+            color: #e86b51;
           }
           .skills-list {
-            // color: #009177;
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            width: 100%;
+            margin-right: 10px;
           }
         }
         .accordion-detail {
+          font-size: 17px;
+          > p {
+            margin-bottom: 5px;
+          }
         }
       }
     }
@@ -92,10 +108,29 @@
 }
 // 모바일
 @media screen and (max-width: $mp) {
-  .profile .contents {
-    flex-wrap: wrap !important;
-    .profile-box {
-      width: 100% !important;
+  .profile {
+    .about {
+      flex-wrap: wrap;
+      gap: 30px;
+      .about-left {
+        width: 50% !important;
+      }
+      .about-right {
+        width: 90% !important;
+      }
+    }
+    .skills {
+      .accordion {
+        .accordion-title {
+          font-size: 15px !important;
+          .skills-list {
+            gap: 10px !important;
+          }
+        }
+        .accordion-detail {
+          font-size: 14px !important;
+        }
+      }
     }
   }
 }

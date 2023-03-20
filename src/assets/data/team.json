@@ -1,0 +1,49 @@
+[
+  {
+    "gitLink": "https://github.com/Haeparic/monthlycoffee",
+    "gitAlt": "monthly_coffee",
+    "imgSrc": "images/monthly.webp",
+    "title": "MONTHLY COFFEE",
+    "date": "2023.02.09 ~ 2023.03.02",
+    "part": "지출, 수입 내역, 통계, 커뮤니티",
+    "skill": "React, Tailwind CSS, Redux, nivo, MUI, React-Cookie",
+    "notionLink": "https://lydian-celsius-9e0.notion.site/2-Monthly-Coffee-abb9f8a417c44f1990b667e5cac096c2",
+    "detail": "커피를 자주 애용하는 사람들을 위한 커피 전용 가계부 프로젝트입니다. 커피 지출 입력과 조회, 지출 내역 데이터를 바탕으로 한 통계 데이터 조회, 커뮤니티 기능을 구현하였습니다.",
+    "detail_list": [
+      "카카오 계정 연동을 통한 로그인으로 해당 서비스를 이용할 수 있습니다.",
+      "커피 지출 내역의 등록과 조회, 데이터를 바탕으로 한 통계 데이터를 확인할 수 있습니다.",
+      "지출 내역을 커뮤니티로 공유하여 다른 이용자들과 의견을 나눌 수 있습니다."
+    ]
+  },
+  {
+    "gitLink": "https://github.com/Haeparic/sutabucks",
+    "gitAlt": "sutabucks",
+    "imgSrc": "images/sutabucks.webp",
+    "title": "SUTABUCKS",
+    "date": "2023.01.11 ~ 2023.02.06",
+    "part": "메뉴 및 상세페이지, 주문페이지, 장바구니, 결페페이지",
+    "skill": "React Redux Tailwind CSS",
+    "notionLink": "https://gregarious-taxi-457.notion.site/1-f3d39fc6a14e4d0e9f80b037cfefb692",
+    "detail": "멤버십 카드를 이용해서 음료 및 음식을 주문할 수 있는 사이트입니다. \"Starbucks\"사이트를 참고하여 만들었습니다.",
+    "detail_list": [
+      "회원가입 후, 로그인을 한 뒤 근처에 있는 매장을 선택해서 음료 및 음식을 선택해서 주문 및 결제를 할 수 있습니다.",
+      "QR코드를 이용하여 선택한 메뉴의 상세 페이지로 이동할 수 있습니다.",
+      "멤버십 카드에 잔액을 충전하여 주문한 메뉴를 결제할 수 있습니다."
+    ]
+  },
+  {
+    "gitLink": "https://github.com/Haeparic/bookstore",
+    "gitAlt": "bookstore",
+    "imgSrc": "images/bookstore.webp",
+    "title": "교보문고 미니 프로젝트",
+    "date": "2023.01.11 ~ 2023.02.06",
+    "part": "메인페이지, 검색기능",
+    "skill": "React Bootstrap",
+    "notionLink": "https://gregarious-taxi-457.notion.site/bbb3fc5260ff47eeb1d22eab83f352a6",
+    "detail": "교보문고 사이트를 참조하여 도서를 검색하고 해당 도서에 대한 상세 내용을 조회할 수 있는 웹사이트를 만들었습니다.",
+    "detail_list": [
+      "메인 페이지에서 \"오늘의 선택\" 항목을 통해 사용자에게 도서를 추천하는 기능을 제공합니다.",
+      "리스트에서 원하는 책을 검색할 수 있습니다."
+    ]
+  }
+]

@@ -6,8 +6,9 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.64px;
-  color: #2f4858;
-  background-color: #001446;
+  color: #494645;
+  // background-color: #001446;
+  background-color: #666d50;
   word-break: keep-all;
 }
 body::-webkit-scrollbar {
@@ -38,30 +39,37 @@ body::-webkit-scrollbar-thumb {
 .container {
   // padding-top: 80px;
   // position: relative;
-  display: flex;
   max-width: 1180px;
   margin: 50px auto;
-  background-color: #dbd6c9;
+  margin-bottom: 20px;
+  // background-color: #faebd7;
+  background-color: #f6f2f1;
   border-radius: 15px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  .main-container {
+    display: flex;
+  }
 }
 .main-contents {
   width: 85%;
+  // height: 100%;
 }
 a {
-  color: #000;
+  color: #494645;
   text-decoration: none;
 }
 h2 {
   padding: 30px 0;
-  color: #8c0000;
-  text-shadow: 2px 2px 0px #bdbdbd;
-  font-size: 35px;
-  font-weight: 600;
+  color: #e86b51;
+  // text-shadow: 2px 2px 0px #bdbdbd;
+  font-family: "DungGeunMo";
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-transform: uppercase;
 }
 h3 {
   // padding: 30px 0;
-  color: #4c4637;
   font-size: 20px;
   font-weight: 600;
   // text-align: center;

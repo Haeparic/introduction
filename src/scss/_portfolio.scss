@@ -2,10 +2,45 @@
   margin: 50px 0;
   .inner {
     .contents {
+      .portfolio-title {
+        // color: #001446;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 25px;
+        font-size: 26px;
+        font-weight: 600;
+        background-color: #005b92;
+        color: #f6f2f1;
+        // text-shadow: 2px 2px 0px #bdbdbd;
+        text-align: center;
+        line-height: 40px;
+        clip-path: polygon(
+          0px 10px,
+          5px 10px,
+          5px 5px,
+          10px 5px,
+          10px 0px,
+          calc(100% - 10px) 0px,
+          calc(100% - 10px) 5px,
+          calc(100% - 5px) 5px,
+          calc(100% - 5px) 10px,
+          100% 10px,
+          100% calc(100% - 10px),
+          calc(100% - 5px) calc(100% - 10px),
+          calc(100% - 5px) calc(100% - 5px),
+          calc(100% - 10px) calc(100% - 5px),
+          calc(100% - 10px) 100%,
+          10px 100%,
+          10px calc(100% - 5px),
+          5px calc(100% - 5px),
+          5px calc(100% - 10px),
+          0px calc(100% - 10px)
+        );
+      }
       .portfolio-team-box {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 100px;
         .portfolio-team {
           display: flex;
           align-items: center;
@@ -13,35 +48,47 @@
           // width: calc(50% - 10px);
           width: 100%;
           justify-content: space-around;
-          margin-bottom: 75px;
           .portfolio-img {
             display: block;
             text-align: center;
-            width: calc(45% - 10px);
+            width: calc(40% - 10px);
             a {
               display: block;
+              margin-bottom: 7px;
               img {
                 width: 100%;
               }
             }
+            span {
+              color: #666;
+              font-size: 14px;
+            }
           }
           .portfolio-txt {
-            width: calc(45% - 10px);
+            width: calc(50% - 10px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            // justify-content: space-between;
             .pf-txt {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              .pf-title {
-                font-size: 25px;
-                color: #4c4637;
-              }
-              .pf-date {
-                font-size: 14px;
-                color: #666;
+              // display: flex;
+              // flex-direction: column;
+              .pf-txt1 {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .pf-title {
+                  font-size: 25px;
+                  color: #005b92;
+                }
+                .pf-date {
+                  font-size: 14px;
+                  color: #666;
+                }
               }
               .pf-skill {
-                color: #be5846;
+                color: #e86b51;
                 font-weight: 600;
               }
               .pf-notion {
@@ -54,7 +101,7 @@
               }
             }
             .pf-memo {
-              margin: 10px 0;
+              // margin: 10px 0;
               font-weight: 600;
             }
             .pf-detail {
@@ -62,19 +109,56 @@
           }
         }
       }
-      .portfolio-box {
+      .portfolio-study-box {
         .portfolio-slide {
-          a {
-            display: block;
-            width: 100%;
-            text-align: center;
-            img {
-              width: 100%;
-            }
+          height: 270px;
+          // a {
+          //   display: block;
+          //   width: 100%;
+          //   text-align: center;
+          //   img {
+          //     width: 100%;
+          //   }
+          // }
+          // .swiper-button-next,
+          // .swiper-button-prev {
+          //   color: #fff !important;
+          // }
+          .card-title {
+            font-size: 18px;
           }
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: #fff !important;
+          .study-skills {
+            display: flex;
+            gap: 5px;
+            margin-top: 3px;
+          }
+          // .swiper-pagination {
+          //   bottom: -5px;
+          // }
+          // .swiper-pagination-bullet {
+          //   background-color: #000;
+          //   margin: 0 10px !important;
+          // }
+          .swiper-pagination {
+            // position: relative;
+            bottom: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // height: 85px;
+          }
+          .swiper-pagination.swiper-pagination {
+            bottom: 0;
+          }
+          .swiper-pagination-bullet {
+            background: #be5846;
+            width: 22px;
+            height: 4px;
+            border-radius: 0;
+            transition: opacity 0.5s ease;
+          }
+          .swiper-pagination-bullet.swiper-pagination-bullet.swiper-pagination-bullet {
+            margin: 0;
           }
         }
       }
@@ -87,13 +171,17 @@
 }
 // 타블렛
 @media screen and (max-width: $tablet) {
+  .MuiCard-root {
+    margin: auto;
+    box-shadow: none !important;
+  }
 }
 // 모바일
 @media screen and (max-width: $mp) {
   .portfolio-team {
     gap: 20px;
     .portfolio-img {
-      width: 100% !important;
+      width: 70% !important;
     }
     .portfolio-txt {
       width: 100% !important;

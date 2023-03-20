@@ -13,8 +13,8 @@ import Portfolio from "./pages/Portfolio";
 import More from "./pages/More";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
-import MobileMenu from "./components/MobileMenu";
 import MobileNav from "./components/MobileNav";
+import Contact from "./pages/Contact";
 
 const App = () => {
   // Anime 적용대상
@@ -31,13 +31,30 @@ const App = () => {
     const secs = main.current.querySelectorAll(".scroll");
     for (const item of secs) {
       // 각 영역의 스크롤 픽셀 위치값
-      pos.current.push(item.offsetTop);
+      const winW = window.innerWidth;
+      if (winW < 860) {
+        pos.current.push(item.offsetTop - 80);
+      } else {
+        pos.current.push(item.offsetTop);
+      }
     }
     // console.log(pos.current);
     // 모바일 메뉴 숨기기
     const winW = window.innerWidth;
     if (winW > 860) {
       setOpen(false);
+    }
+
+    // 콘택트 아이콘 숨기기
+    const headerIcons = document.querySelector(".header-contact");
+    if (winW > 860) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > pos.current[3] + 50) {
+          headerIcons.style.opacity = 0;
+        } else {
+          headerIcons.style.opacity = 1;
+        }
+      });
     }
   };
   // 6. header 의 메뉴를 클릭시 페이지 번호 전달
@@ -66,20 +83,38 @@ const App = () => {
   }, []);
   // 모바일 메뉴 펼치기 상태관리
   const [open, setOpen] = useState(false);
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setOpen(open);
+  };
+
   return (
     <div className="wrap" ref={main}>
       <GoTop />
       {/* 7. page 변경 props 전달 */}
       <div className="container">
-        <Header setPage={setPage} open={open} setOpen={setOpen} />
-        <MobileNav setPage={setPage} open={open} setOpen={setOpen} />
-        {/* <MobileMenu setPage={setPage} open={open} setOpen={setOpen} /> */}
-        <div className="main-contents">
-          <Visual />
-          <Profile />
-          <Portfolio />
-          <More />
+        <div className="main-container">
+          <Header setPage={setPage} open={open} setOpen={setOpen} />
+          <MobileNav
+            setPage={setPage}
+            open={open}
+            setOpen={setOpen}
+            toggleDrawer={toggleDrawer}
+          />
+          {/* <MobileMenu setPage={setPage} open={open} setOpen={setOpen} /> */}
+          <div className="main-contents">
+            <Visual />
+            <Profile />
+            <Portfolio />
+            <More />
+          </div>
         </div>
+        <Contact />
       </div>
       <Footer />
     </div>

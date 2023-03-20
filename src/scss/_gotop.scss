@@ -4,12 +4,12 @@
   justify-content: center;
   align-items: center;
   right: 50px;
-  bottom: -200px;
+  bottom: -150px;
   width: 50px;
   height: 50px;
-  background: #222;
+  background: #2f4858;
   color: #fff;
-  z-index: 9997;
+  z-index: 999;
   cursor: pointer;
   border-radius: 50%;
   text-align: center;
@@ -17,5 +17,5 @@
   transition: bottom 0.5s;
 }
 .active {
-  bottom: 100px !important;
+  bottom: 50px !important;
 }

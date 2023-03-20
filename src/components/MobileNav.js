@@ -1,19 +1,26 @@
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Drawer } from "@mui/material";
 import React from "react";
 
-const MobileNav = ({ setPage, open, setOpen }) => {
+const MobileNav = ({ setPage, open, setOpen, toggleDrawer }) => {
   //   const handleDrawerClose = () => {
   //     setOpen(false);
   //   };
   return (
     <Drawer
       className="mobile"
-      variant="persistent"
       anchor="right"
       open={open}
-      sx={{ background: "transparent" }}
+      onClose={toggleDrawer(false)}
+      // hideBackdrop="false"
     >
       <ul className="mobile-menu">
+        <li onClick={() => setOpen(false)}>
+          <span>
+            <FontAwesomeIcon icon={faChevronRight} />
+          </span>
+        </li>
         <li
           onClick={() => {
             setPage(0);

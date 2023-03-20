@@ -5,6 +5,7 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { Tooltip } from "@mui/material";
 
 const Header = ({ setPage, open, setOpen }) => {
   const path = process.env.PUBLIC_URL;
@@ -17,7 +18,7 @@ const Header = ({ setPage, open, setOpen }) => {
           </span> */}
           <img
             className="header-logo"
-            src={`${path}/images/logo.png`}
+            src={`${path}/images/Haeparic.png`}
             alt="logo"
             onClick={() => setPage(0)}
           />
@@ -34,8 +35,11 @@ const Header = ({ setPage, open, setOpen }) => {
             <li onClick={() => setPage(3)}>
               <span>More</span>
             </li>
+            <li onClick={() => setPage(4)}>
+              <span>Contact</span>
+            </li>
           </ul>
-          <div className="contact">
+          <div className="header-contact">
             <a
               href="https://github.com/Haeparic"
               target="_blank"
@@ -52,14 +56,22 @@ const Header = ({ setPage, open, setOpen }) => {
             >
               <FontAwesomeIcon icon={faIdCardClip} />
             </a>
-            <a
-              href="mailto:v567v202@gmail.com"
-              target="_blank"
-              alt="email"
-              rel="noopener noreferrer"
+            <Tooltip
+              className="contact-tooltip"
+              title="v567v202@gmail.com"
+              disableFocusListener
+              arrow
+              // sx={{ background: "#000", color: "#fff", fontSize: 20 }}
             >
-              <FontAwesomeIcon icon={faGoogle} />
-            </a>
+              <a
+                href="mailto:v567v202@gmail.com"
+                target="_blank"
+                alt="email"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGoogle} />
+              </a>
+            </Tooltip>
           </div>
           <span
             className="mobile-bt"

@@ -5,22 +5,21 @@
   // position: fixed;
   // left: 100%;
   // top: 80px;
-  // width: 100%;
+  // width: 80%;
   // height: 50vh;
-  // background-color: transparent;
-  z-index: 9998;
-  // transition: left 0.3s ease-in-out;
+  z-index: 9999;
   .mobile-menu {
-    padding-top: 80px;
+    width: 40vh;
+    // padding-top: 80px;
     li {
       padding: 30px;
       border-bottom: 1px solid #ddd;
       cursor: pointer;
       span {
-        font-size: 30px;
+        font-size: 20px;
       }
       &:hover span {
-        color: #624637;
+        color: #8c0000;
       }
     }
   }

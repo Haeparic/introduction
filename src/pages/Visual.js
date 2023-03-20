@@ -14,7 +14,7 @@ const Visual = () => {
           <TypeIt
             className="title-main"
             options={{
-              speed: 150,
+              speed: 200,
               waitUntilVisible: true,
             }}
           >

@@ -7,6 +7,16 @@
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
     format("woff");
 }
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+}
 
 // 반응형
 $desktop: 1230px;
@@ -17,7 +27,7 @@ $mp: 860px;
 // 공통 scss
 @import "layout";
 @import "header";
-@import "mobilemenu";
+@import "mobilenav";
 @import "footer";
 @import "gotop";
 // 섹션 scss
@@ -25,3 +35,4 @@ $mp: 860px;
 @import "profile";
 @import "portfolio";
 @import "more";
+@import "contact";
