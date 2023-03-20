@@ -8,9 +8,16 @@
     align-items: center;
     // background-color: #222;
     color: #fff;
+    font-size: 14px;
     text-shadow: 1px 1px 0px #2f4858;
-    copy {
-      font-size: 14px;
-    }
   }
+}
+// 데스크탑
+@media screen and (max-width: $desktop) {
+}
+// 타블렛
+@media screen and (max-width: $tablet) {
+}
+// 모바일
+@media screen and (max-width: $mp) {
 }

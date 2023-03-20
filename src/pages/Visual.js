@@ -4,7 +4,7 @@ import React from "react";
 import TypeIt from "typeit-react";
 
 const Visual = () => {
-  const path = process.env.PUBLIC_URL;
+  // const path = process.env.PUBLIC_URL;
   return (
     <section className="visual scroll">
       <div className="inner">
@@ -35,7 +35,7 @@ const Visual = () => {
         <div className="title-scroll">
           scroll
           <br />
-          <FontAwesomeIcon icon={faChevronDown} />
+          <FontAwesomeIcon icon={faChevronDown} className="icon-scroll" />
         </div>
       </div>
     </section>

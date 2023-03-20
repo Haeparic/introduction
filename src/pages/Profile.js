@@ -14,37 +14,35 @@ const Profile = () => {
             <img src={`${path}/images/profile.jpg`} alt="pic" />
           </div>
           <div className="about-right">
-            <div className="about-text">
-              <div className="about-title">
-                <div className="about-top">
-                  <span>
-                    안녕하세요, 꾸준한 <span className="color">학습</span>과
-                  </span>
-                  <img
-                    src={`${path}/images/logo.png`}
-                    alt="logo"
-                    className="about-logo"
-                  />
-                </div>
-                <p>
-                  <span className="color">성장</span>을 추구하는&nbsp;
-                  <span className="color">개발자</span>
-                  &nbsp;김철호입니다.
-                </p>
+            <div className="about-title">
+              <div className="about-top">
+                <span>
+                  안녕하세요, 꾸준한 <span className="color">학습</span>과
+                </span>
+                <img
+                  src={`${path}/images/logo.png`}
+                  alt="logo"
+                  className="about-logo"
+                />
               </div>
-              <p className="about-detail">
-                프론트엔드 개발자에게 있어 가장 핵심적인 가치는&nbsp;
-                <b>팀원들과의 원활한 협업과 소통</b>
-                입니다. 또한,&nbsp;
-                <b>새로운 기술과 도구에 대한 지속적인 탐구와 적용</b>을 통해
-                보다 나은 코드와 사용자 경험을 만들어내는 것도 매우 중요합니다.
-                저는&nbsp;
-                <b>협업</b>과&nbsp;
-                <b>기술</b> 모두를 두루 중요시하며, 효율적인 문제 해결 능력과
-                논리적인 사고력을 활용하여 프론트엔드 개발자로서&nbsp;
-                <b>최선의 성과</b>를 이루고자 합니다.
+              <p>
+                <span className="color">성장</span>을 추구하는&nbsp;
+                <span className="color">개발자</span>
+                &nbsp;김철호입니다.
               </p>
             </div>
+            <p className="about-detail">
+              프론트엔드 개발자에게 있어 가장 핵심적인 가치는&nbsp;
+              <b>팀원들과의 원활한 협업과 소통</b>
+              입니다. 또한,&nbsp;
+              <b>새로운 기술과 도구에 대한 지속적인 탐구와 적용</b>을 통해 보다
+              나은 코드와 사용자 경험을 만들어내는 것도 매우 중요합니다.
+              저는&nbsp;
+              <b>협업</b>과&nbsp;
+              <b>기술</b> 모두를 두루 중요시하며, 효율적인 문제 해결 능력과
+              논리적인 사고력을 활용하여 프론트엔드 개발자로서&nbsp;
+              <b>최선의 성과</b>를 이루고자 합니다.
+            </p>
           </div>
         </div>
         <div className="skills">

@@ -6,7 +6,7 @@
         // color: #001446;
         width: 200px;
         height: 40px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         font-size: 26px;
         font-weight: 600;
         background-color: #005b92;
@@ -104,14 +104,13 @@
               // margin: 10px 0;
               font-weight: 600;
             }
-            .pf-detail {
-            }
           }
         }
       }
       .portfolio-study-box {
         .portfolio-slide {
-          height: 270px;
+          width: 90%;
+          height: 280px;
           // a {
           //   display: block;
           //   width: 100%;
@@ -141,7 +140,7 @@
           // }
           .swiper-pagination {
             // position: relative;
-            bottom: -10px;
+            bottom: -15px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -151,8 +150,8 @@
             bottom: 0;
           }
           .swiper-pagination-bullet {
-            background: #be5846;
-            width: 22px;
+            background: #e86b51;
+            width: 40px;
             height: 4px;
             border-radius: 0;
             transition: opacity 0.5s ease;
@@ -178,13 +177,46 @@
 }
 // 모바일
 @media screen and (max-width: $mp) {
+  .portfolio-title {
+    width: 160px !important;
+    height: 35px !important;
+    font-size: 20px !important;
+    line-height: 35px !important;
+  }
   .portfolio-team {
     gap: 20px;
     .portfolio-img {
-      width: 70% !important;
+      width: 80% !important;
     }
     .portfolio-txt {
       width: 100% !important;
+      height: 100%;
+      .pf-txt {
+        .pf-txt1 {
+          .pf-title {
+            font-size: 20px !important;
+          }
+          .pf-date {
+            font-size: 14px;
+          }
+        }
+        .pf-skill {
+          color: #e86b51;
+          font-weight: 600;
+        }
+        .pf-notion {
+          font-weight: 600;
+          a {
+            img {
+              width: 2rem;
+            }
+          }
+        }
+      }
+      .pf-memo {
+        // margin: 10px 0;
+        font-weight: 600;
+      }
     }
   }
 }

@@ -1,6 +1,41 @@
 [
   {
     "gitLink": "https://github.com/Haeparic/quora-clone",
-    "imgSrc": "images/study4.png"
+    "imgSrc": "images/study4.png",
+    "title": "쿼라 클론코딩",
+    "skill_list": [
+      { "skill": "React", "color": "#61DAFB" },
+      { "skill": "Firebase", "color": "#FFCB2F" },
+      { "skill": "Tailwind", "color": "#44A8B3" }
+    ]
+  },
+  {
+    "gitLink": "https://github.com/Haeparic/Hansalim",
+    "imgSrc": "images/study2.png",
+    "title": "한살림장보기 클론코딩",
+    "skill_list": [
+      { "skill": "HTML", "color": "#FF7200" },
+      { "skill": "CSS", "color": "#2196F3" },
+      { "skill": "Javascript", "color": "#FFD800" }
+    ]
+  },
+  {
+    "gitLink": "https://github.com/Haeparic/ee",
+    "imgSrc": "images/study3.png",
+    "title": "빙그레 클론코딩",
+    "skill_list": [
+      { "skill": "HTML", "color": "#FF7200" },
+      { "skill": "CSS", "color": "#2196F3" },
+      { "skill": "Javascript", "color": "#FFD800" }
+    ]
+  },
+  {
+    "gitLink": "https://github.com/Haeparic/STX",
+    "imgSrc": "images/study1.png",
+    "title": "STX 건설 클론코딩",
+    "skill_list": [
+      { "skill": "HTML", "color": "#FF7200" },
+      { "skill": "CSS", "color": "#2196F3" }
+    ]
   }
 ]

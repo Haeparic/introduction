@@ -39,6 +39,7 @@ const App = () => {
       }
     }
     // console.log(pos.current);
+
     // 모바일 메뉴 숨기기
     const winW = window.innerWidth;
     if (winW > 860) {
@@ -55,6 +56,21 @@ const App = () => {
           headerIcons.style.opacity = 1;
         }
       });
+    }
+
+    const titleScroll = document.querySelector(".title-scroll");
+    if (winW > 860) {
+      if (window.scrollY > pos.current[0]) {
+        titleScroll.style.opacity = 0;
+      } else {
+        titleScroll.style.opacity = 1;
+      }
+    } else {
+      if (window.scrollY > pos.current[0] + 80) {
+        titleScroll.style.opacity = 0;
+      } else {
+        titleScroll.style.opacity = 1;
+      }
     }
   };
   // 6. header 의 메뉴를 클릭시 페이지 번호 전달
@@ -81,6 +97,7 @@ const App = () => {
       window.removeEventListener("scroll", getPos);
     };
   }, []);
+
   // 모바일 메뉴 펼치기 상태관리
   const [open, setOpen] = useState(false);
   const toggleDrawer = (open) => (event) => {

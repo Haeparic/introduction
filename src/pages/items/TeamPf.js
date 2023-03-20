@@ -1,33 +1,33 @@
 import React from "react";
 
-const TeamPf = (item) => {
+const TeamPf = (props) => {
   const path = process.env.PUBLIC_URL;
-  console.log(item);
+  // console.log(item);
   return (
     <div className="portfolio-team">
       <div className="portfolio-img">
         <a
-          href={item.item.gitLink}
+          href={props.item.gitLink}
           target="_blank"
-          alt={item.item.gitAlt}
+          alt={props.item.gitAlt}
           rel="noopener noreferrer"
         >
-          <img src={`${path}/${item.item.imgSrc}`} alt="project" />
+          <img src={`${path}/${props.item.imgSrc}`} alt="project" />
         </a>
         <span>이미지 클릭시 프로젝트 페이지로 이동합니다.</span>
       </div>
       <div className="portfolio-txt">
         <div className="pf-txt">
           <div className="pf-txt1">
-            <h3 className="pf-title">{item.item.title}</h3>
-            <span className="pf-date">{item.item.date}</span>
+            <h3 className="pf-title">{props.item.title}</h3>
+            <span className="pf-date">{props.item.date}</span>
           </div>
-          {/* <span className="">담당파트 : {item.item.part}</span> */}
-          <span className="pf-skill">{item.item.skill}</span>
+          {/* <span className="">담당파트 : {props.item.part}</span> */}
+          <span className="pf-skill">{props.item.skill}</span>
           {/* <span className="pf-notion">
             프로젝트 Notion :&nbsp;
             <a
-              href={item.item.notionLink}
+              href={props.item.notionLink}
               target="_blank"
               alt="portfolio"
               rel="noopener noreferrer"
@@ -36,9 +36,9 @@ const TeamPf = (item) => {
             </a>
           </span> */}
         </div>
-        <p className="pf-memo">{item.item.detail}</p>
+        <p className="pf-memo">{props.item.detail}</p>
         <ul className="pf-detail">
-          {item.item.detail_list.map((item, index) => (
+          {props.item.detail_list.map((item, index) => (
             <li key={index}>- {item}</li>
           ))}
         </ul>

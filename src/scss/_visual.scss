@@ -26,9 +26,40 @@
     .title-scroll {
       position: absolute;
       left: 50%;
-      bottom: 30px;
+      bottom: 20px;
       transform: translate(-50%, 0);
       text-align: center;
+      transition: all 0.5s;
+      .icon-scroll {
+        animation: up-down 0.4s infinite ease-in-out alternate;
+        margin-top: 0;
+        @keyframes up-down {
+          from {
+            transform: translatey(0px);
+          }
+          to {
+            transform: translatey(5px);
+          }
+        }
+      }
     }
+  }
+}
+// 데스크탑
+@media screen and (max-width: $desktop) {
+}
+// 타블렛
+@media screen and (max-width: $tablet) {
+}
+// 모바일
+@media screen and (max-width: $mp) {
+  .title-main {
+    font-size: 80px !important;
+  }
+  .title-sub {
+    font-size: 24px;
+  }
+  .title-scroll {
+    bottom: 15px !important;
   }
 }

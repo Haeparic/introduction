@@ -19,3 +19,20 @@
 .active {
   bottom: 50px !important;
 }
+// 데스크탑
+@media screen and (max-width: $desktop) {
+}
+// 타블렛
+@media screen and (max-width: $tablet) {
+}
+// 모바일
+@media screen and (max-width: $mp) {
+  .gotop {
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
+  .active {
+    bottom: 30px !important;
+  }
+}

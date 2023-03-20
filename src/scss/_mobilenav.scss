@@ -9,17 +9,20 @@
   // height: 50vh;
   z-index: 9999;
   .mobile-menu {
-    width: 40vh;
+    width: 230px;
     // padding-top: 80px;
     li {
-      padding: 30px;
-      border-bottom: 1px solid #ddd;
+      padding: 25px;
+      // border-bottom: 1px solid #ccc8c7;
       cursor: pointer;
       span {
-        font-size: 20px;
+        color: #666d50;
+        font-family: "DungGeunMo";
+        font-size: 24px;
+        text-transform: uppercase;
       }
       &:hover span {
-        color: #8c0000;
+        color: #e86b51;
       }
     }
   }

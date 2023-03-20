@@ -53,6 +53,14 @@ const MobileNav = ({ setPage, open, setOpen, toggleDrawer }) => {
         >
           <span>More</span>
         </li>
+        <li
+          onClick={() => {
+            setPage(4);
+            setOpen(false);
+          }}
+        >
+          <span>Contact</span>
+        </li>
       </ul>
     </Drawer>
   );

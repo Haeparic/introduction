@@ -13,7 +13,7 @@
         img {
           // width: 70%;
           // aspect-ratio: 1/1;
-          border: 3px solid #4c4637;
+          border: 2px solid #4c4637;
           border-radius: 2rem;
           overflow: hidden;
           transform: rotate(10deg);
@@ -25,34 +25,31 @@
       }
       .about-right {
         display: flex;
-        justify-content: center;
-        // align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
         width: calc(55% - 10px);
-        // margin-right: 25px;
-        .about-text {
-          .color {
-            color: #e86b51;
+        .color {
+          color: #e86b51;
+        }
+        .about-title {
+          margin-bottom: 5px;
+          color: #494645;
+          text-shadow: 1px 1px 0px #bdbdbd;
+          font-size: 25px;
+          font-weight: 600;
+          .about-top {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
           }
-          .about-title {
-            margin-bottom: 5px;
-            color: #494645;
-            text-shadow: 1px 1px 0px #bdbdbd;
-            font-size: 25px;
-            font-weight: 600;
-            .about-top {
-              display: flex;
-              align-items: flex-end;
-              gap: 20px;
-            }
-            img {
-              width: 50px;
-              height: 50px;
-            }
+          img {
+            width: 50px;
+            height: 50px;
           }
-          .about-detail {
-            font-size: 19px;
-            text-align: justify;
-          }
+        }
+        .about-detail {
+          font-size: 19px;
+          text-align: justify;
         }
       }
     }
@@ -83,7 +80,7 @@
           }
           .skills-list {
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             gap: 10px;
             width: 100%;
             margin-right: 10px;
@@ -117,18 +114,32 @@
       }
       .about-right {
         width: 90% !important;
+        .about-title {
+          font-size: 20px !important;
+          font-weight: 600;
+          img {
+            width: 35px !important;
+            height: 35px !important;
+          }
+        }
+        .about-detail {
+          font-size: 15px !important;
+          text-align: initial !important;
+        }
       }
     }
     .skills {
       .accordion {
+        width: 90% !important;
         .accordion-title {
           font-size: 15px !important;
           .skills-list {
-            gap: 10px !important;
+            flex-wrap: wrap;
+            gap: 5px !important;
           }
         }
         .accordion-detail {
-          font-size: 14px !important;
+          font-size: 15px !important;
         }
       }
     }
