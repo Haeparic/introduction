@@ -7,7 +7,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 25px;
+      gap: 40px;
       margin: 15px auto;
       .more-list {
         width: 70%;
@@ -40,8 +40,8 @@
       font-size: 18px !important;
     }
     .more-text {
-      font-size: 14px !important;
-      height: 17vh;
+      font-size: 15px !important;
+      height: 16vh;
       padding-right: 10px;
       overflow-y: scroll;
       &::-webkit-scrollbar {

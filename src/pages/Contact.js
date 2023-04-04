@@ -8,9 +8,14 @@ const Contact = () => {
     <section className="contact scroll">
       <h2>Contact</h2>
       <div className="contact-list">
-        <span>
+        <a
+          href="mailto:v567v202@gmail.com"
+          target="_blank"
+          alt="email"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faEnvelope} /> v567v202@gmail.com
-        </span>
+        </a>
         <span>
           <FontAwesomeIcon icon={faPhone} /> +82 10 5339 3459
         </span>

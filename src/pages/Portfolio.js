@@ -21,7 +21,7 @@ const Portfolio = () => {
     <section className="portfolio scroll">
       <div className="inner">
         {/* 개발담당자 : 팀프로젝트, 개인 작업(5개 목표) */}
-        <h2 data-aos="fade-up">Portfolio</h2>
+        <h2 data-aos="fade-left">Portfolio</h2>
         <div className="contents">
           {/* 팀프로젝트 */}
           <div className="portfolio-title">Team Project</div>
@@ -64,8 +64,8 @@ const Portfolio = () => {
               className="portfolio-slide"
             >
               {study.map((item, index) => (
-                <SwiperSlide>
-                  <StudyPf key={index} item={item} />
+                <SwiperSlide key={index}>
+                  <StudyPf item={item} />
                 </SwiperSlide>
               ))}
             </Swiper>

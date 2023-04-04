@@ -1,5 +1,6 @@
 [
   {
+    "link": "https://quora-clone-eta.vercel.app/",
     "gitLink": "https://github.com/Haeparic/quora-clone",
     "imgSrc": "images/study4.png",
     "title": "쿼라 클론코딩",
@@ -10,6 +11,18 @@
     ]
   },
   {
+    "link": "https://ts-todo-three.vercel.app/",
+    "gitLink": "https://github.com/Haeparic/ts-todo",
+    "imgSrc": "images/study5.png",
+    "title": "Todo 스터디",
+    "skill_list": [
+      { "skill": "React", "color": "#61DAFB" },
+      { "skill": "TypeScript", "color": "#3178C6" },
+      { "skill": "Ant-Design", "color": "#0170FE" }
+    ]
+  },
+  {
+    "link": "https://haeparic.github.io/Hansalim/",
     "gitLink": "https://github.com/Haeparic/Hansalim",
     "imgSrc": "images/study2.png",
     "title": "한살림장보기 클론코딩",
@@ -20,6 +33,7 @@
     ]
   },
   {
+    "link": "https://dev-jiji.github.io/ee/",
     "gitLink": "https://github.com/Haeparic/ee",
     "imgSrc": "images/study3.png",
     "title": "빙그레 클론코딩",
@@ -30,6 +44,7 @@
     ]
   },
   {
+    "link": "https://haeparic.github.io/STX/",
     "gitLink": "https://github.com/Haeparic/STX",
     "imgSrc": "images/study1.png",
     "title": "STX 건설 클론코딩",
