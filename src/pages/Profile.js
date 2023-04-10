@@ -8,7 +8,8 @@ const Profile = () => {
   return (
     <section className="profile scroll">
       <div className="inner">
-        <h2 data-aos="fade-left">About</h2>
+        {/* <h2>About</h2> */}
+        <h2 data-aos="zoom-out">About</h2>
         <div className="about">
           <div className="about-left">
             <img src={`${path}/images/profile.jpg`} alt="pic" />

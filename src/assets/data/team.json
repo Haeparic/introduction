@@ -32,6 +32,22 @@
     ]
   },
   {
+    "gitLink": "https://github.com/Haeparic/skycastle",
+    "gitAlt": "skycastle",
+    "imgSrc": "images/nct.webp",
+    "title": "성적 관리 프로젝트",
+    "date": "2023.03.06 ~ 2023.04.04",
+    "part": "성적 입력, 선생님용 성적 조회(학생 개인 평균, 전체 평균)",
+    "skill": "React Ant-Design Tailwind",
+    "notionLink": "https://gregarious-taxi-457.notion.site/1-f3d39fc6a14e4d0e9f80b037cfefb692",
+    "detail": "고등학생을 위한 영어 성적 LMS 프로젝트입니다. 학생의 과목별 점수를 입력하고 성적 분석하는 기능과 선생님이 피드백을 할 수 있는 게시판 기능이 있습니다.",
+    "detail_list": [
+      "선생님이 담당하는 반의 성적을 입력하고 학생의 성적을 조회할 수 있습니다.",
+      "학생은 과목별 성적을 조회하고 성적에 대한 분석 내용을 볼 수 있습니다.",
+      "성적에 대해서 피드백을 남길 수 있는 게시판 기능이 있습니다."
+    ]
+  },
+  {
     "gitLink": "https://github.com/Haeparic/bookstore",
     "gitAlt": "bookstore",
     "imgSrc": "images/bookstore.webp",

@@ -50,7 +50,7 @@ const App = () => {
     const headerIcons = document.querySelector(".header-contact");
     if (winW > 860) {
       window.addEventListener("scroll", () => {
-        if (window.scrollY > pos.current[3] + 50) {
+        if (window.scrollY > pos.current[3] + 100) {
           headerIcons.style.opacity = 0;
         } else {
           headerIcons.style.opacity = 1;
