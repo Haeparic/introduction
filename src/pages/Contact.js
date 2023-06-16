@@ -16,9 +16,6 @@ const Contact = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} /> v567v202@gmail.com
         </a>
-        <span>
-          <FontAwesomeIcon icon={faPhone} /> +82 10 5339 3459
-        </span>
         <a
           href="https://github.com/Haeparic"
           target="_blank"
